@@ -8,18 +8,16 @@ import User from './resolvers/User'
 import Comment from './resolvers/Comment'
 import Post from './resolvers/Post'
 
-// Resolvers
-const resolvers = {
-  Query,
-  Mutation,
-  User,
-  Comment,
-  Post
-}
-
 const server = new GraphQLServer({
   typeDefs : './src/schema.graphql',
-  resolvers : resolvers,
+  resolvers : {
+    Query,
+    Mutation,
+    User,
+    Comment,
+    Post
+  },
+  
   // passes the context to all / any resolvers
   context: {
     db
