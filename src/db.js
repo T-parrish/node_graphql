@@ -45,21 +45,25 @@ const posts = [{
   title: 'Practical Applications for Bacon',
   author: '3',
   published: true,
+  body: 'step one, acquire bacon',
 },{
   id: '2',
   title: 'What is That Smell? and Other Bedtime Stories',
   author: '2',
   published: false,
+  body: 'It was a dark and stormy night',
 },{ 
   id: '3',
   title: 'Liquidity 101',
   author: '1',
   published: false,
+  body: 'diversify yo bonds',
 },{ 
   id: '4',
   title: 'Moonboot Promenade',
   author: '3',
   published: true,
+  body: 'boots and cats and boots and cats',
 }]
 
 const db = {
